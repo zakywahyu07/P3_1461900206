@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\dokter;
 use Illuminate\Http\Request;
 
-class dokterController extends Controller
-{
+class DokterController extends Controller {
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +13,8 @@ class dokterController extends Controller
      */
     public function index()
     {
-        //
+        $dokter = dokter::all();
+        return view('dokter0206', ['dokter'=> $dokter]);
     }
 
     /**
