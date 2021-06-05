@@ -13,8 +13,8 @@ class DokterController extends Controller {
      */
     public function index()
     {
-        $dokter = dokter::all();
-        return view('dokter0206', ['dokter'=> $dokter]);
+        $dokter = Dokter::all();
+        return view('dokter0206', ['Dokter'=> $dokter]);
     }
 
     /**
@@ -24,7 +24,7 @@ class DokterController extends Controller {
      */
     public function create()
     {
-        //
+        return view('doktertambah0206');
     }
 
     /**

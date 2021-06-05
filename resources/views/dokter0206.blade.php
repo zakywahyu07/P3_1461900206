@@ -35,6 +35,7 @@
               <th>id</th>
               <th>nama</th>
               <th>jabatan</th>
+              <th>Aksi</th>
           </tr>
       </thead>
       <tbody>
@@ -44,9 +45,15 @@
             <td>{{$dokter->id}}</td>
             <td>{{$dokter->nama}}</td>
             <td>{{$dokter->jabatan}}</td>
+            <td> 
+              <a href="#!">Edit</a>
+
+              <a href="#!"> Hapus </a>
+            <td>
         </tr>
         @endforeach
       </tbody>
+      <a class="dokter_tambah" href="{{route('dokter0206.create')}}"> Tambah Data</a>
   </table>
   </div>
 </body>

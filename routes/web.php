@@ -19,5 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dokter0206', 'App\Http\Controllers\D\dokterController@index');
-// Route::resource('/dokter', [dokterController::class]);
+Route::resource('dokter0206',DokterController::class);
+Route::resource('/dokter0206', 'App\Http\Controllers\DokterController');
