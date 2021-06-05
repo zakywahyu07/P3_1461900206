@@ -15,4 +15,6 @@ class dokter extends Model {
         'nama',
         'jabatan',
     ];
+    public $timestamps = false;
+
 }

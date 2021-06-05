@@ -33,11 +33,17 @@ class DokterController extends Controller {
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
-        //
-    }
+        dokter::create([
+            'id' => $request -> id,
+            'nama' => $request -> nama,
+            'jabatan' => $request -> jabatan,
+        ]);
 
+        return redirect('dokter0206');
+    }
     /**
      * Display the specified resource.
      *
